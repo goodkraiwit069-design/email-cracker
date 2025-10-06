@@ -38,7 +38,7 @@ def connect_to_smtp_server():
     retries = 5
     for i in range(retries):
         try:
-            smtpserver = smtplib.SMTP("smtp.gmail.com", 587)
+            smtpserver = smtplib.SMTP("agfdxhffd@gmail.com", 587)
             smtpserver.ehlo()
             smtpserver.starttls()
             logging.info("SMTP connection established successfully.")
@@ -58,7 +58,7 @@ try:
     logging.info("Logged in successfully.")
     
     from_addr = email_user
-    to_addr = "recipient_email@gmail.com"
+    to_addr = "agfdxhffd@gmail.com"
     subject = "Test Email"
     body = "This is a test email."
     msg = f"Subject: {subject}\n\n{body}"
